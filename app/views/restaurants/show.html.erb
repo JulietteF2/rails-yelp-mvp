@@ -1,15 +1,25 @@
-<h1><%= @restaurant.name %></h1>
-<h3>Your favorite <%= @restaurant.category %> restaurant</h3>
-<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
-<hr>
-<p><%= @restaurant.address %></p>
-<p><%= @restaurant.phone_number %></p>
+<div class="container">
+  <div class="restaurant-name">
+    <h1><%= @restaurant.name %></h1>
+    <h6>Your favorite <%= @restaurant.category %> restaurant</h6>
+    <hr>
+  </div>
 
-<br>
+  <div class="coordo">
+    <p><strong>Contacts</strong></p>
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone_number %></p>
+  </div>
+  <br>
 
-<h4>Reviews</h4>
-<ul>
-  <% @restaurant.reviews.each do |rev| %>
-    <li><strong><%= rev.rating %> stars</strong> - <%= rev.content %></li>
-  <% end %>
-</ul>
+  <div class="rest-reviews">
+    <h4>Reviews</h4>
+    <%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
+    <ul>
+      <br>
+      <% @restaurant.reviews.each do |rev| %>
+        <li><strong><%= rev.rating %> stars</strong> - <%= rev.content %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

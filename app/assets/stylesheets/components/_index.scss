@@ -2,3 +2,17 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+.container {
+  width: 65vw;
+  padding-bottom: 16px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 16px;
+}
+
+ul {
+  list-style: none;
+}

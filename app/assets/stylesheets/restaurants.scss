@@ -1,3 +1,27 @@
 // Place all the styles related to the Restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.restaurant-name h6 {
+  text-align: center;
+}
+
+.coordo p {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.rest-reviews {
+  margin-left: 16px;
+  padding-bottom: 8px;
+}
+
+.rest-reviews > a {
+  font-size: 14px;
+}
+
+.rest-reviews > ul {
+  padding: 0px;
+  font-size: 14px;
+}
