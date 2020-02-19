@@ -1,0 +1,10 @@
+<h1>Check previous reviews of <%= @restaurant.name %></h1>
+<%= link_to "Back to #{@restaurant.name}", restaurant_path(@restaurant) %>
+<hr>
+
+<% @reviews.each do |rev| %>
+  <li><strong><%= rev.rating %> stars</strong> - <%= rev.content %></li>
+<% end %>
+
+
+
